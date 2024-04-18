@@ -153,11 +153,16 @@
 	position: relative;
   }
 
-body {
+  body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: url(https://www.largus.fr/images/2023-10/mercedes-eqa-eqb-facelift-2023-bd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
+
 
 /* header {
     background-color: #333;
@@ -376,4 +381,48 @@ h2 {
 		white-space: nowrap;
 	}
 
+}
+
+.add-car-form {
+	margin-bottom: 20px;
+}
+
+.add-car-form input[type="text"] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+.add-car-form button {
+	background-color: #007bff;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background-color 0.3s;
+}
+
+.add-car-form button:hover {
+	background-color: #0056b3;
+}
+
+.update-btn, .delete-btn {
+	background-color: #dc3545;
+	color: white;
+	padding: 5px 10px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 14px;
+	transition: background-color 0.3s;
+}
+
+.update-btn:hover, .delete-btn:hover {
+	background-color: #c82333;
 }

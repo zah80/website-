@@ -1,214 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mercedes-Benz E-Commerce</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
 </head>
 <body>
   <header>
-    <div class="logo"><a href="#">BenZ</a></div>
+    <div class="logo"><a href="#">MZ Autohaus</a></div>
     <div class="menu">
-      <a href="#">
-        <ion-icon name="close" class="close"></ion-icon>
-      </a>
+        <a href="#">
+            <ion-icon name="close" class="close"></ion-icon>
+        </a>
 
-      <ul>
-        <li><a href="#" class="under">HOME</a></li>
-        <li><a href="#" class="under">SHOP</a></li>
-        <li><a href="#" class="under">OUR PRODUCTS</a></li>
-        <li><a href="#" class="under">CONTACT US</a></li>
-        <li><a href="#" class="under">ABOUT US</a></li>
-      </ul>
+        <!-- <ul>
+            <li><a href="#" class="under">HOME</a></li>
+            <li><a href="#" class="under">SHOP</a></li>
+            <li><a href="#" class="under">OUR PRODUCTS</a></li>
+            <li><a href="#" class="under">CONTACT US</a></li>
+            <li><a href="#" class="under">ABOUT US</a></li>
+        </ul> -->
     </div>
     <div class="search">
 
-      <a href=""><input type="text" placeholder="search products" id="input">
-        <ion-icon class="s" name="search"></ion-icon>
-      </a>
+        <a href=""><input type="text" placeholder="search products" id="input">
+            <ion-icon class="s" name="search"></ion-icon>
+        </a>
     </div>
     <div class="heading">
-      <ul>
-        <li><a href="#" class="under">HOME</a></li>
-        <li><a href="#" class="under">SHOP</a></li>
-        <li><a href="#" class="under">OUR PRODUCTS</a></li>
-        <li><a href="#" class="under">CONTACT US</a></li>
-        <li><a href="#" class="under">ABOUT US</a></li>
-      </ul>
+        <ul>
+            <li><a href="#" class="under">HOME</a></li>
+            <li><a href="shop.html" class="under">SHOP</a></li>
+            <li><a href="#" class="under">OUR PRODUCTS</a></li>
+            <li><a href="#" class="under">CONTACT US</a></li>
+            <li><a href="#" class="under">ABOUT US</a></li>
+        </ul>
     </div>
     <div class="heading1">
-      <ion-icon name="menu" class="ham"></ion-icon>
+        <ion-icon name="menu" class="ham"></ion-icon>
     </div>
-  </header>
-    <!-- <header>
-        <h1>Mercedes-Benz E-Commerce</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Cars</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header> -->
-    <main>
-        <button class="add-btn">
-            <span class="sr-only">Add</span>
-        </button>
-    
-        <template id="card">
-            <li class="card">              
-            <div class="car" id="car">
-                <img src="Mercedes-A-Class-facelift-2023-3.jpg" alt="Mercedes-Benz Car 1">
-                <p>Model: Class</p>
-                <p>Price: $35,000</p>
-                <button onclick="editProduct('car1')">Edit </button>
-                <button onclick="deleteProduct('car1')">Delete </button>
-            </div>
-            <button class="delete-btn">
-              <span class="sr-only">Delete</span>
-            </button>
-          </li>
-            
-        </template>
-    
-        <ul class="cards">
-          
-          
-          <li class="card" >
-            <div class="car" id="car1">
-                <img src="images/Mercedes-A-Class-facelift-2023-3.jpg" alt="Mercedes-Benz Car 1">
-                <p>Model: A-Class</p>
-                <p>Price: $35,000</p>
-                <button onclick="editProduct('car1')">Edit </button>
-                <button onclick="deleteProduct('car1')">Delete </button>
-            </div>
-            <button class="delete-btn">
-              <span class="sr-only">Delete</span>
-            </button>
-          </li>
-          <li class="card" >
-            <div class="car" id="car2">
-                <img src="images/Mercedes B-Class 2023 UK-15.webp" alt="Mercedes-Benz Car 2">
-                <p>Model: B-Class</p>
-                <p>Price: $40,000</p>
-                <button onclick="editProduct('car 2')">Edit </button>
-                <button onclick="deleteProduct('car 2')">Delete </button>
-            </div>
-            <button class="delete-btn">
-              <span class="sr-only">Delete</span>
-            </button>
-          </li>
-          
-          <li class="card" >
-            <div class="car" id="car3">
-                <img src="images/images (1).jpg" alt="Mercedes-Benz Car 3">
-                <p>Model: C-Class</p>
-                <p>Price: $50,000</p>
-                <button onclick="editProduct('car 3')">Edit </button>
-                <button onclick="deleteProduct('car 3')">Delete </button>
-            </div>
-            <button class="delete-btn">
-              <span class="sr-only">Delete</span>
-            </button>
-          </li>
-          <li class="card" >
-            <div class="car" id="car4">
-                <img src="images/eclass_303.jpg" alt="Mercedes-Benz Car 4">
-                <p>Model: E-Class</p>
-                <p>Price: $50,000</p>
-                <button onclick="EditProduct('car4')">Edit </button>
-                <button onclick="deleteProduct('car4')">Delete</button>
-            </div>
-            <button class="delete-btn">
-              <span class="sr-only">Delete</span>
-            </button>
-          </li>
-          <li class="card" >
-            <div class="car" id="car5">
-                <img src="images/Mercedes-G-Class-2023-1.webp" alt="Mercedes-Benz Car 5">
-                <p>Model: G-Class</p>
-                <p>Price: $160,000</p>
-                <button onclick="editProduct('car5')">Edit </button>
-                <button onclick="deleteProduct('car5')">Delete </button>
-            </div>
-            <button class="delete-btn">
-              <span class="sr-only">Delete</span>
-            </button>
-          </li>
-          
-          <li class="card" >
-            <div class="car" id="car6">
-                <img src="images/Mercedes-Benz-S500-7.webp" alt="Mercedes-Benz Car 6">
-                <p>Model: S-Class</p>
-                <p>Price: $130,000</p>
-                <button onclick="editProduct('car6')">Edit </button>
-                <button onclick="deleteProduct('car6')">Delete </button>
-            </div>
-            <button class="delete-btn">
-              <span class="sr-only">Delete</span>
-            </button>
-          </li>
+</header>
 
-          <li class="card" >
-            <div class="car" id="car7">
-                <img src="images/28ce59d8-93ed-4cb4-a01b-a9bef11a0ff9.jpg" alt="Mercedes-Benz Car 7">
-                <p>Model: ML-Class</p>
-                <p>Price: $25,000</p>
-                <button onclick="editProduct('car7')">Edit </button>
-                <button onclick="deleteProduct('car7')">Delete</button>
-            </div>
-            <button class="delete-btn">
-              <span class="sr-only">Delete</span>
-            </button>
-          </li>
 
-          <li class="card" >
-            <div class="car" id="car8">
-                <img src="images/27955d95-d7d5-4503-b0cf-c858b366753c.jpg" alt="Mercedes-Benz Car 8">
-                <p>Model: R-Class</p>
-                <p>Price: $10,000</p>
-                <button onclick="EditProduct('car8')">Edit </button>
-                <button onclick="deleteProduct('car8')">Delete</button>
-            </div>
-            <button class="delete-btn">
-              <span class="sr-only">Delete</span>
-            </button>
-          </li>
 
-          <li class="card" >
-            <div class="car" id="car9">
-                <img src="images/131077504.jpg" alt="Mercedes-Benz Car 2">
-                <p>Model: V-Class</p>
-                <p>Price: $80,000</p>
-                <button onclick="EditProduct('car9')">Edit </button>
-                <button onclick="deleteProduct('car9')">Delete </button>
-            </div>
-            <button class="delete-btn">
-              <span class="sr-only">Delete</span>
-            </button>
-          </li>
 
-          <li class="card" >
-            <div class="car" id="car10">
-                <img src="images/2019-mercedes-x350d-power-ute-silver-peter-anderson-1001x565-(1).webp" alt="Mercedes-Benz Car 2">
-                <p>Model: X-Class</p>
-                <p>Price: $40,000</p>
-                <button onclick="EditProduct('car10')">Edit </button>
-                <button onclick="deleteProduct('car10')">Delete</button>
-            </div>
-            <button class="delete-btn">
-              <span class="sr-only">Delete</span>
-            </button>
-          </li>
-        </ul>      
-           
-        
-    </main>
-    <footer>
-        <p>&copy; 2022 Mercedes-Benz E-Commerce</p>
-    </footer>
-    <script src="script.js"></script>
 </body>
 </html>
